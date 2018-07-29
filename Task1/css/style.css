@@ -1,6 +1,6 @@
 /* variables*/
 	:root {
-  --btn-color : #F7E545;
+  --btn-color : rgba(247,229,69);
 }
 /*global style*/
 *{
@@ -31,7 +31,7 @@ section{
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 .container{
