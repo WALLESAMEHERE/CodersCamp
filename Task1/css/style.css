@@ -1,6 +1,7 @@
 /* variables*/
 	:root {
   --btn-color : rgba(247,229,69);
+  --black-color: rgba(0,0,0,0.8);;
 }
 /*global style*/
 *{
@@ -14,9 +15,16 @@ body{
 h1{
 	font-size: 72px;
 	font-weight: 100;
+	text-align: center;
+	letter-spacing: 0.05em;
 }
 h2{
-	font-size: 34px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 36px;
+	text-align: center;
+	letter-spacing: 0.05em;
 }
 section{
 	display: grid;
@@ -43,7 +51,7 @@ section{
     justify-content: center;
 }
 .info_box{
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.4);
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -64,10 +72,15 @@ section{
 }
 .user_info_text{
 	padding: 10px 27px 0 51px;
-	line-height: 28px;
+
 	text-align: left;
-	letter-spacing: 2px;
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+	font-size: 22px;
+	letter-spacing: 0.05em;
 }
+
 .main_box{
 	padding: 105px;
 }
@@ -79,15 +92,16 @@ section{
 	transition:0.3s;
 }
 .btn_download{
-	background-color: rgba(0,0,0,0.8);
+	background-color: var(--black-color);
 	color:white;
 	font-size: 22px;
 	padding: 12px 32px;
-	-webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-		border: 1px solid transparent;
-		font-weight: 400;
+	-webkit-box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+	border: 1px solid var(--black-color);
+	font-weight: 400;
+	margin: 20px 0 ;
 }
 .btn_download:hover{
 	background-color: var(--btn-color);
@@ -103,7 +117,12 @@ section{
 .social_icon{
 	font-size: 4.5em;
 	background-color: transparent;
+	color:black;
 }
-.social_icon:hover{
+.social_icon a>i{
+		transition:0.3s;
+	    color: var(--black-color);
+}
+.social_icon a:hover > i{
 	color: var(--btn-color);
 }
