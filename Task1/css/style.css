@@ -9,8 +9,15 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+}
 body{
 	font-family: 'Roboto', sans-serif;
+			background-image: url('../img/bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
 h1{
 	font-size: 72px;
@@ -33,18 +40,10 @@ section{
 	text-align: center;
 	grid-template-columns: 1fr 3fr;
 }
-
-.bg{
-	background-image: url('../img/bg.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	min-height: 100%;
-	width: 100%;
-}
 .container{
+
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	display: grid;
 	position: relative;
     align-items: center
@@ -52,12 +51,13 @@ section{
 }
 .info_box{
 	background-color: rgba(0,0,0,0.4);
-	height: 100%;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	padding: 8px;
+	align-self:stretch;
 
+}
+.user_info_img img{
+	border-radius: 50%;
 }
 .user_info_box{
 	display: grid;
@@ -72,12 +72,11 @@ section{
 }
 .user_info_text{
 	padding: 10px 27px 0 51px;
-
 	text-align: left;
 	font-style: normal;
 	font-weight: 300;
 	line-height: normal;
-	font-size: 22px;
+	font-size: 17px;
 	letter-spacing: 0.05em;
 }
 
@@ -102,6 +101,10 @@ section{
 	border: 1px solid var(--black-color);
 	font-weight: 400;
 	margin: 20px 0 ;
+
+}
+.btn_download a{
+	color:white;
 }
 .btn_download:hover{
 	background-color: var(--btn-color);
